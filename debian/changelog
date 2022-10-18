@@ -1,0 +1,55 @@
+ruby-fuubar (2.5.0-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Pirate Praveen ]
+  * Switch to github tarballs for tests
+  * New upstream version 2.5.0
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Drop patches already applied upstream
+  * Check dependencies listed in gemspec during tests
+  * Don't install bin/setup
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 23 Feb 2020 23:34:37 +0530
+
+ruby-fuubar (2.0.0-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cédric Boutillier ]
+  * Remove version in the gem2deb build-dependency
+  * Run wrap-and-sort on packaging files
+  * Use new default gem2deb Rakefile to run the tests
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump debhelper compatibility level to 11
+  * Move debian/watch to gemwatch.debian.net
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+  * Set Testsuite field to autopkgtest-pkg-ruby
+  * Use https in copyright format URL
+
+  [ Hleb Valoshka ]
+  * Remove myself from uploaders
+
+  [ Sophie Brun ]
+  * Add fix-tests-patch to accommodate tests with ruby-progressbar >= 1.9
+  * Bump minimal version in ruby-progressbar dependency to 1.9
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 08 Oct 2018 20:32:43 +0200
+
+ruby-fuubar (2.0.0-2) unstable; urgency=medium
+
+  * Fix dependencies (ruby-rspec>=3.0, ruby-progressbar>=1.4)
+  * Enable tests
+  * Add patch 0001-Use-color-output-in-tests.patch
+  * Add myself to uploaders
+  * Update Standards-Version to 3.9.6 (no changes)
+
+ -- Hleb Valoshka <375gnu@gmail.com>  Thu, 04 Jun 2015 19:30:34 +0300
+
+ruby-fuubar (2.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #624634)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 10 Sep 2014 18:20:03 +0530

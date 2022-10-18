@@ -1,0 +1,4 @@
+version=3
+opts=\
+dversionmangle=auto\
+ https://github.com/thekompanee/fuubar/tags .*/archive/releases/v?([\d\.]+).tar.gz

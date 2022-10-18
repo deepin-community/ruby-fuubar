@@ -1,0 +1,29 @@
+Source: ruby-fuubar
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               ruby-progressbar (>= 1.9),
+               ruby-rspec (>= 3.5)
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-fuubar.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-fuubar
+Homepage: https://github.com/jeffkreeftmeijer/fuubar
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-fuubar
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-progressbar (>= 1.9),
+         ruby-rspec (>= 3.5),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: instafailing RSpec progress bar formatter
+ It is an instafailing RSpec formatter that uses a progress bar instead of a
+ string of letters and dots as feedback.
+ .
+ A video of Fuubar in action http://vimeo.com/16845253

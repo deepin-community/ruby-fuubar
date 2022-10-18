@@ -1,0 +1,24 @@
+From: Hleb Valoshka <Hleb Valoshka 375gnu@gmail.com>
+Date: Thu, 4 Jun 2015 19:15:30 +0300
+Subject: Use color output in tests
+
+---
+ spec/fuubar_spec.rb | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/spec/fuubar_spec.rb b/spec/fuubar_spec.rb
+index ee1b7de..31a63ca 100644
+--- a/spec/fuubar_spec.rb
++++ b/spec/fuubar_spec.rb
+@@ -2,6 +2,11 @@ require 'fuubar'
+ require 'stringio'
+ require 'ostruct'
+ 
++RSpec.configure do |config|
++  config.color = true
++  config.tty = true
++end
++
+ describe Fuubar do
+   let(:output) do
+     io = StringIO.new
